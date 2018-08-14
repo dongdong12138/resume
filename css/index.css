@@ -1,0 +1,53 @@
+body {
+    background: white;
+    height: 3000px;
+}
+
+/* 网站头部导航 开始 */
+.topNavBar {
+    height: 41px;
+    padding: 20px 16px;
+    background: skyblue;
+    background: black;
+}
+
+/* logo 部分 */
+.logo {
+    font-family: "Arial Black";
+    font-size: 24px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+}
+.logo span:first-child {
+    color: #e6686a;
+    margin-right: 4px;
+}
+.logo span:last-child {
+    color: #9a9da2;
+}
+
+/* nav 部分 */
+.topNavBar nav {
+    padding: 5px 0 2px;
+}
+.topNavBar ul {
+    height: 28px;
+    padding-top: 6px;
+}
+.topNavBar ul li {
+    float: left;
+    margin: 0 17px;
+}
+.topNavBar ul a {
+    font-size: 12px;
+    font-family: "Microsoft Yahei";
+    color: #b7b7b7;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.topNavBar ul a:hover {
+    border-bottom: 3px solid #e06567; 
+}
+
+
+/* 网站头部导航结束 */
