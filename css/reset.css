@@ -1,6 +1,6 @@
 /* css reset */
 
-html, body, ul, li, input, a, img {
+html, body, ul, ol, li, dl, dt, dd, input, a, img, h1, p {
     margin: 0;
     padding: 0;
 }
@@ -9,4 +9,10 @@ ul, ol {
 }
 a {
     text-decoration: none;
+    color: inherit;
+}
+hr {
+    height: 0;
+    border: none;
+    border-top: 1px solid #DEDEDE;
 }
