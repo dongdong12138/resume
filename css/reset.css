@@ -1,6 +1,6 @@
 /* css reset */
 
-html, body, ul, ol, li, dl, dt, dd, input, a, img, h1, p {
+html, body, ul, ol, li, dl, dt, dd, input, a, img, h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
