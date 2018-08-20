@@ -74,10 +74,14 @@ body {
 
 
 /* 名片 开始 */
+body>main {
+    margin-top: -340px;
+}
 .userCard {
     max-width: 940px;
     margin: 0 auto;
     background: #fff;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
 }
 .pictureAndText {
     padding: 50px;
@@ -160,4 +164,179 @@ body {
     vertical-align: top;
 }
 /* 名片 结束 */
+
+
+/* 下载简历 开始 */
+.downloadResume-wrapper {
+    text-align: center;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.downloadResume {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #cdcfd1;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    padding: 21px 55px;
+    background: #efefef;
+    border-radius: 2px;
+    color: #3d4451;
+    margin: 32px 0;
+    transition: all 0.2s;
+}
+.downloadResume:hover {
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
+}
+.downloadResume-wrapper p {
+    font: 18px/1.8 "楷体";
+}
+/* 下载简历 结束 */
+
+
+/* 技能板块 开始 */
+.skills {
+    max-width: 940px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+/* 标题 */
+.skills h2,
+.sampleReels h2 {
+    text-align: center;
+    color: #3d4451;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+/* 技能列表 */
+.skills ol {
+    margin-top: 30px;
+    background: #fff;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    max-width: 940px;
+    padding: 42px 50px 10px;
+}
+.skills ol li {
+    float: left;
+    width: 48%;
+    margin-bottom: 40px;
+}
+.skills ol li:nth-child(2n) {
+    float: right;
+}
+.skills h3 {
+    font-size: 14px;
+    line-height: 1.1;
+    font-weight: normal;
+}
+
+/* 进度条 */
+.skills .progressBar {
+    width: 100%;
+    height: 5px;
+    background: #FAE1E1;
+    border-radius: 2px;
+    margin: 4px 0 0;
+}
+.skills .progress {
+    width: 50%;
+    height: 100%;
+    background: #E6686A;
+    border-radius: 2px;
+}
+.skills .progress.html {
+    width: 10%;
+}
+.skills .progress.JavaScript {
+    width: 20%;
+}
+.skills .progress.jQuery {
+    width: 30%;
+}
+.skills .progress.Vue {
+    width: 40%;
+}
+.skills .progress.React {
+    width: 50%;
+}
+.skills .progress.Node {
+    width: 60%;
+}
+/* 技能板块 结束 */
+
+
+
+/* 作品集板块 开始 */
+.sampleReels {
+    margin: 60px auto;
+    max-width: 940px;
+    text-align: center;
+}
+.sampleReels nav {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin: 32px 0px 28px;
+}
+.sampleReels ol {
+    display: inline-block;
+    vertical-align: top;
+}
+.sampleReels ol li {
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.sampleReels ol li:first-child {
+    margin-left: 0;
+}
+
+/* 进度条 */
+.sampleReelsBar {
+    height: 5px;
+    background: #fff;
+    margin-top: 5px;
+    border-radius: 2px;
+}
+.sampleReelsBar .bar-inner {
+    height: 100%;
+    border-radius: 2px;
+    background: #E6686A;
+    transition: all 0.2s;
+}
+.sampleReelsBar.state-1 .bar-inner {
+    width: 34px;
+    margin-left: 0;
+}
+.sampleReelsBar.state-2 .bar-inner {
+    width: 40px;
+    margin-left: 70px;
+}
+.sampleReelsBar.state-3 .bar-inner {
+    width: 90px;
+    margin-left: 144px;
+}
+
+/* 作品 */
+.works .big {
+    float: left;
+}
+.works .big img {
+    vertical-align: top;
+}
+.works .small img {
+    float: right;
+}
+.works .small img:first-child {
+    margin-bottom: 27px;
+}
+/* 作品集板块 结束 */
+
+
+
 
