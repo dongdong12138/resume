@@ -15,19 +15,30 @@ window.onscroll = function () {
 
 
 // subnav
-let aTags = document.getElementsByClassName('menuTigger');
-for (let i = 0; i < aTags.length; i ++) {
-    aTags[i].onmouseenter = function (event) {
-        let a = event.currentTarget;            // 找 a 的弟弟
-        let brother = a.nextSibling;
-        while (brother.nodeType === 3) {
-            brother = brother.nextSibling;
-        }
-        console.log(brother);
+let liTags = document.querySelectorAll('nav.menu > ul > li');
+for (let i = 0; i < liTags.length; i ++) {
+    liTags[i].onmouseenter = function (event) {
+        event.currentTarget.classList.add('active');
     };
-    aTags[i].onmouseleave = function (event) {};
+    liTags[i].onmouseleave = function (event) {
+        event.currentTarget.classList.remove('active'); 
+    };
 }
 
+
+// auto scroll smoothly
+let aTags = document.querySelectorAll('nav.menu > ul > li > a');
+for (let i = 0; i < aTags.length; i ++) {
+    aTags[i].onclick = function (event) {
+        event.preventDefault();                 // 阻止默认动作
+        let a = event.currentTarget;
+        let href = a.getAttribute('href');
+        let element = document.querySelector(href);
+        let rect = element.getBoundingClientRect();
+        let top = element.offsetTop;
+        window.scrollTo(0, top-80);
+    };
+}
 
 
 // 作品集滚动条滚动
