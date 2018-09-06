@@ -1,7 +1,7 @@
 // 页面加载成功
-// setTimeout(function() {
-//     siteWelcome.classList.remove('active');
-// }, 2000);
+setTimeout(function() {
+    siteWelcome.classList.remove('active');
+}, 2000);
 
 
 // sticky navbar
