@@ -1,3 +1,7 @@
+// 页面加载成功
+siteWelcome.classList.remove('active');
+
+// 作品集滚动条滚动
 var sampleAll = document.getElementById('sampleAll');
 var sampleFrame = document.getElementById('sampleFrame');
 var sampleProto = document.getElementById('sampleProto');
