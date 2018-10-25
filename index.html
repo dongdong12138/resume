@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,16 @@
     <link rel="stylesheet" href="./css/loading.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
     <link rel="stylesheet" href="./css/index.css">
     <script src="//at.alicdn.com/t/font_798161_57q5hjxf9l.js"></script>
 </head>
+
 <body>
     <!-- loading 开始 -->
-    <div id="siteWelcome" class="site-welcome active">
+    <!-- <div id="siteWelcome" class="site-welcome active">
         <div class="loading"></div>
-    </div>
+    </div> -->
     <!-- loading 结束 -->
 
     <!-- 网站头部导航 开始 -->
@@ -26,12 +29,16 @@
                 <span>RS</span>
                 <span>card</span>
             </a>
-    
+
             <!-- 导航部分 -->
             <nav class="menu fr">
                 <ul class="clearfix">
-                    <li><a href="#siteAbout">关于</a></li>
-                    <li><a href="#siteSkills">技能</a></li>
+                    <li>
+                        <a href="#siteAbout">关于</a>
+                    </li>
+                    <li>
+                        <a href="#siteSkills">技能</a>
+                    </li>
                     <li>
                         <a href="#siteWorks">作品</a>
                         <ul class="subMenu">
@@ -48,9 +55,15 @@
                             <li>博客3</li>
                         </ul>
                     </li>
-                    <li><a href="#">日历</a></li>
-                    <li><a href="#">联系方式</a></li>
-                    <li><a href="#">其他</a></li>
+                    <li>
+                        <a href="#">日历</a>
+                    </li>
+                    <li>
+                        <a href="#">联系方式</a>
+                    </li>
+                    <li>
+                        <a href="#">其他</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -66,7 +79,7 @@
     <!-- banner 结束 -->
 
 
-    
+
 
     <!-- 名片 开始 -->
     <main>
@@ -76,7 +89,7 @@
                 <div class="picture fl">
                     <img src="images/touxiang.jpg" alt="">
                 </div>
-    
+
                 <!-- 个人信息 -->
                 <div class="text fl">
                     <span class="welcome">
@@ -139,8 +152,8 @@
         <a class="downloadResume" href="#" target="_blank" download>下载 PDF 简历</a>
 
         <p>
-            董浩， 资深前端工程师，资深前端讲师，现在在 饥人谷 学前端课程。<br> 
-            技能：前端开发，Rails 开发，Node.js 开发
+            董浩， 资深前端工程师，资深前端讲师，现在在 饥人谷 学前端课程。
+            <br> 技能：前端开发，Rails 开发，Node.js 开发
         </p>
     </div>
     <!-- 下载简历 结束 -->
@@ -194,32 +207,40 @@
     <!-- 作品集板块 开始 -->
     <section data-x id="siteWorks" class="sampleReels">
         <h2>作品集</h2>
-        <nav>
-            <ol class="clearfix">
-                <li id="sampleAll">所有</li>
-                <li id="sampleFrame">框架</li>
-                <li id="sampleProto">原生JS&amp;CSS</li>
-            </ol>
-            <div class="sampleReelsBar state-1">
-                <div class="bar-inner"></div>
+        <div id="mySlides">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <img src="./works/keyboard-nav.jpg" class="swiper-slide">
+                    <img src="./works/canvas.jpg" class="swiper-slide">
+                    <img src="./works/Apple-Slide.jpg" class="swiper-slide">
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
             </div>
-        </nav>
-        <div class="works clearfix">
-            <div class="big fl">
-                <img src="images/1.jpg" alt="作品1">
-            </div>
-            <div class="small">
-                <img src="images/2.jpg" alt="作品2">
-                <img src="images/3.jpg" alt="作品3">
-            </div>
-            
         </div>
+
     </section>
     <!-- 作品集板块 结束 -->
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
-<script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+    <script src="js/loading.js"></script>
+    <!-- 模块化 -->
+    <script src="./js/init-swiper.js"></script>
+    <script src="./js/auto-slide-up.js"></script>
+    <script src="./js/sticky-navbar.js"></script>
+    <script src="./js/auto-scroll-smoothly.js"></script>
+    <script src="./js/subnav.js"></script>
 </body>
+
 </html>
