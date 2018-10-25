@@ -361,6 +361,9 @@ section.skills.offset .progress {
     max-width: 940px;
     text-align: center;
 }
+.sampleReels h2 {
+    margin-bottom: 32px;
+}
 .sampleReels nav {
     display: inline-block;
     vertical-align: top;
@@ -380,44 +383,25 @@ section.skills.offset .progress {
     margin-left: 0;
 }
 
-/* 进度条 */
-.sampleReelsBar {
-    height: 5px;
-    background: #fff;
-    margin-top: 5px;
-    border-radius: 2px;
+/* 作品轮播图 */
+.sampleReels .swiper-container {
+    width: 668px;
+    height: 501px;
+    background: #ddd;
 }
-.sampleReelsBar .bar-inner {
-    height: 100%;
-    border-radius: 2px;
-    background: #E6686A;
-    transition: all 0.2s;
+.sampleReels .swiper-slide {
+    background: green;
 }
-.sampleReelsBar.state-1 .bar-inner {
-    width: 34px;
-    margin-left: 0;
+.sampleReels .swiper-button-prev,
+.sampleReels .swiper-button-next {
+    width: 64px;
+    height: 64px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
 }
-.sampleReelsBar.state-2 .bar-inner {
-    width: 40px;
-    margin-left: 70px;
-}
-.sampleReelsBar.state-3 .bar-inner {
-    width: 90px;
-    margin-left: 144px;
-}
-
-/* 作品 */
-.works .big {
-    float: left;
-}
-.works .big img {
-    vertical-align: top;
-}
-.works .small img {
-    float: right;
-}
-.works .small img:first-child {
-    margin-bottom: 27px;
+.sampleReels .swiper-button-prev:hover,
+.sampleReels .swiper-button-next:hover {
+    background-color: rgba(0, 0, 0, 0.3);    
 }
 /* 作品集板块 结束 */
 
