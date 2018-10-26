@@ -281,7 +281,8 @@ body>main {
 
 /* 标题 */
 .skills h2,
-.sampleReels h2 {
+.sampleReels h2,
+.message h2 {
     text-align: center;
     color: #3d4451;
     font-size: 34px;
@@ -404,6 +405,21 @@ section.skills.offset .progress {
     background-color: rgba(0, 0, 0, 0.3);    
 }
 /* 作品集板块 结束 */
+
+/* 留言功能 开始 */
+section.message {
+    max-width: 700px;
+    margin: 0 auto;
+}
+section.message > ol {
+    border-top: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+section.message > ol > li {
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+}
+/* 留言功能 结束 */
 
 
 
