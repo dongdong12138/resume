@@ -230,12 +230,27 @@
     </section>
     <!-- 作品集板块 结束 -->
 
+    <!-- 留言板 开始 -->
+    <section class="message">
+        <h2>留言</h2>
+        <ol id="messageList"></ol>
+        <form id="postMessageForm" action="">
+            <label for="name">姓名：</label> <input type="text" name="name" id="name">
+            <label for="content">内容：</label> <input type="text" name="content" id="content">
+            <input type="submit" value="提交">
+        </form>
+        
+    </section>
+    <!-- 留言板 结束 -->
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
-    <script src="js/loading.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.10.0/dist/av-min.js"></script>
+    <script src="./js/message.js"></script>
     <!-- 模块化 -->
+    <script src="js/loading.js"></script>
     <script src="./js/init-swiper.js"></script>
     <script src="./js/auto-slide-up.js"></script>
     <script src="./js/sticky-navbar.js"></script>
