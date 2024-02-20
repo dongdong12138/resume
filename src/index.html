@@ -5,8 +5,28 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>前端开发-董浩</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .container {
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+    }
+    section {
+      color: #fff; font-size: 40px;
+      height: 100vh;
+      line-height: 100vh; text-align: center;
+      scroll-snap-align: start;
+    }
+  </style>
 </head>
 <body>
-  <h1>个人简历</h1>
+  <div class="container">
+    <section style="background-color: rgb(8, 163, 5);">1</section>
+    <section style="background-color: rgb(255, 0, 51);">2</section>
+    <section style="background-color: rgb(0, 34, 255);">3</section>
+    <section style="background-color: rgb(255, 123, 0);">4</section>
+    <section style="background-color: rgb(57, 60, 60);">5</section>
+  </div>
 </body>
 </html>
