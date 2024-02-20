@@ -14,6 +14,21 @@ module.exports = {
     port: '3000',
     open: true,
   },
+  module: {
+    rules: [
+      {
+        test: /\.s[ac]ss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /\.(png|jpe?g|gif|webp)$/,
+        type: 'asset',
+        generator: {
+          filename: 'images/[name][ext]',
+        },
+      },
+    ],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/index.html'),
