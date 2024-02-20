@@ -6,27 +6,48 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>前端开发-董浩</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     .container {
       height: 100vh;
       overflow-y: scroll;
       scroll-snap-type: y mandatory;
+      scroll-behavior: smooth;
+      position: relative;
     }
     section {
       color: #fff; font-size: 40px;
       height: 100vh;
-      line-height: 100vh; text-align: center;
       scroll-snap-align: start;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <section class="section1">1</section>
-    <section style="background-color: rgb(255, 0, 51);">2</section>
-    <section style="background-color: rgb(0, 34, 255);">3</section>
-    <section style="background-color: rgb(255, 123, 0);">4</section>
-    <section style="background-color: rgb(57, 60, 60);">5</section>
+
+    <nav>
+      <a href="#section2">关于</a>
+      <a href="#section3">作品</a>
+      <a href="#section1"></a>
+      <a href="#section4">能力</a>
+      <a href="#section5">联系</a>
+    </nav>
+
+    <section id="section1" class="section1">
+      <img src="./images/1.jpg" alt="bg">
+      <div class="content">
+        <p>Hi，我是董浩</p>
+        <p>擅长前端，喜欢简约，打算走向全端的不归路 ~</p>
+        <p>想了解更多，往下滚动哦 ^_^</p>
+      </div>
+    </section>
+
+    <section id="section2" style="background-color: rgb(255, 0, 51);">2</section>
+
+    <section id="section3" style="background-color: rgb(0, 34, 255);">3</section>
+
+    <section id="section4" style="background-color: rgb(255, 123, 0);">4</section>
+
+    <section id="section5" style="background-color: rgb(57, 60, 60);">5</section>
+
   </div>
 </body>
 </html>
