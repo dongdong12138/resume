@@ -1,17 +1,9 @@
-import './css/reset.scss'
-import './css/base.scss'
-import './css/nav.scss'
-import './css/section1.scss'
-import './css/section2.scss'
-import './css/section3.scss'
+// 引入 css 目录下的 scss 文件
+importAll(require.context('./css/', true, /\.scss$/))
 
-import './images/1.jpg'
-import './images/avatar.jpg'
-import './images/nuomi-ui.png'
-import './images/pikaqiu.png'
-import './images/canvas.png'
-import './images/keyboard-nav.png'
-import './images/timing.png'
-import './images/node-fanyi.png'
-import './images/node-server.png'
-import './images/node-todo.png'
+// 引入 images 目录下的所有图片
+importAll(require.context('./images/', true, /\.(png|jpe?g|gif|webp)$/))
+
+function importAll(r) {
+  r.keys().forEach(r)
+}
