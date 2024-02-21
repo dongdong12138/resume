@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>前端开发-董浩</title>
+  <script src="//at.alicdn.com/t/c/font_4270817_smnv8u0gfi.js"></script>
   <style>
     .container {
       height: 100vh;
@@ -16,6 +17,8 @@
     section {
       color: #fff;
       height: 100vh;
+      overflow: hidden;
+      display: flex; justify-content: center; align-items: center;
       scroll-snap-align: start;
     }
   </style>
@@ -40,6 +43,7 @@
       </div>
     </section>
 
+    <!-- 关于 -->
     <section id="section2">
       <ul>
         <li>关于本人</li>
@@ -52,7 +56,65 @@
       <img src="./images/avatar.jpg" alt="avatar">
     </section>
 
-    <section id="section3" style="background-color: rgb(0, 34, 255);">3</section>
+    <!-- 作品 -->
+    <section id="section3">
+      <dl class="online">
+        <dt>在线作品</dt>
+        <dd><img src="./images/nuomi-ui.png" alt="nuomi-ui"></dd>
+        <dd><img src="images/pikaqiu.png" alt="皮卡丘"></dd>
+        <dd><img src="./images/canvas.png" alt="Canvas 画板"></dd>
+        <dd><img src="./images/keyboard-nav.png" alt="键盘导航"></dd>
+        <dd><img src="./images/timing.png" alt="炫丽的倒计时效果"></dd>
+      </dl>
+      <dl class="node">
+        <dt>node 工具</dt>
+        <dd><img src="./images/node-fanyi.png" alt="node-fanyi"></dd>
+        <dd><img src="./images/node-todo.png" alt="node-todo"></dd>
+        <dd><img src="./images/node-server.png" alt="node-server"></dd>
+<!--        <dd>-->
+<!--          <p>命令行翻译工具</p>-->
+<!--          <pre><code>npm i node-fanyi-dong</code></pre>-->
+<!--        </dd>-->
+<!--        <dd>-->
+<!--          <p>使用 Node.js http 模块做的一个本地 node-server 服务器</p>-->
+<!--          <pre><code>npm i node-server-dong</code></pre>-->
+<!--        </dd>-->
+<!--        <dd>-->
+<!--          <p>使用 Node.js fs 模块做的一个命令行 todo 工具</p>-->
+<!--          <pre><code>npm i node-todo-dong</code></pre>-->
+<!--        </dd>-->
+      </dl>
+      <div class="icon-box">
+        <a href="https://github.com/dongdong12138">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-github"></use>
+          </svg>
+        </a>
+        <a href="https://gitee.com/barrydong">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-gitee"></use>
+          </svg>
+        </a>
+      </div>
+<!--      <dl class="code">-->
+<!--        <dt>源码作品</dt>-->
+<!--        <dd>-->
+<!--          Vue 高仿 CNode 社区：-->
+<!--          <a href="https://github.com/dongdong12138/imitation-cnode-community">GitHub</a> |-->
+<!--          <a href="https://gitee.com/barrydong/imitation-cnode-community">Gitee</a>-->
+<!--        </dd>-->
+<!--        <dd>-->
+<!--          尚品汇电商网站后台管理系统：-->
+<!--          <a href="https://github.com/dongdong12138/shangpinhui-admin">GitHub</a> |-->
+<!--          <a href="https://gitee.com/barrydong/shangpinhui-admin">Gitee</a>-->
+<!--        </dd>-->
+<!--        <dd>-->
+<!--          尚品汇电商网站：-->
+<!--          <a href="https://github.com/dongdong12138/shangpinhui">GitHub</a> |-->
+<!--          <a href="https://gitee.com/barrydong/shangpinhui">Gitee</a>-->
+<!--        </dd>-->
+<!--      </dl>-->
+    </section>
 
     <section id="section4" style="background-color: rgb(255, 123, 0);">4</section>
 

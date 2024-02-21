@@ -22,7 +22,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|webp)$/,
-        type: 'asset',
+        type: 'asset/resource',
         generator: {
           filename: 'images/[name][ext]',
         },
