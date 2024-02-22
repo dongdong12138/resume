@@ -1,0 +1,30 @@
+#other {
+  background: #3d5a73;
+  display: flex; justify-content: center; align-items: center;
+  padding: 100px;
+
+  dl { width: 200px; height: 300px; }
+  dt { font-size: 30px; width: 100%; }
+  dd { margin-top: 20px; }
+
+  svg { width: 2em; height: 2em; }
+
+  > .hobby {
+    display: flex; flex-wrap: wrap;
+    align-items: flex-start; align-content: flex-start;
+    > dd {
+      width: 80px;
+      > span { font-size: 16px; display: block; }
+    }
+  }
+
+  > .contact {
+    margin-left: 100px;
+    dd { font-size: 16px; white-space: nowrap; }
+    p {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 5px;
+    }
+  }
+}
