@@ -8,3 +8,8 @@ body {
   fill: currentColor;
   overflow: hidden;
 }
+
+// 隐藏滚动条
+::-webkit-scrollbar {
+  display: none;
+}
