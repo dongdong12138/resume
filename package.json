@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack serve",
-    "build": "webpack"
+    "build": "webpack",
+    "deploy":"gh-pages -d dist -r git@github.com:dongdong12138/resume.git -b gh-pages"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   "homepage": "https://github.com/dongdong12138/resume#readme",
   "devDependencies": {
     "css-loader": "^6.10.0",
+    "gh-pages": "^6.1.1",
     "html-webpack-plugin": "^5.6.0",
     "sass": "^1.71.0",
     "sass-loader": "^14.1.1",
