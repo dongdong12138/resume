@@ -6,10 +6,12 @@
 
   > a {
     color: rgba(255, 255, 255, 0.8); font-size: 30px;
+    white-space: nowrap;
     margin: 0 50px;
 
     &:nth-child(3) {
       width: 60px; height: 60px;
+      flex-shrink: 0;
       background: url("../images/avatar.jpg") no-repeat center; background-size: 100% auto;
       border-radius: 50%;
     }

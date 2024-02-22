@@ -8,17 +8,15 @@
   <script src="//at.alicdn.com/t/c/font_4270817_smnv8u0gfi.js"></script>
   <style>
     .container {
-      height: 100vh;
+      min-width: 900px; height: 100vh;
       overflow-y: scroll;
-      scroll-snap-type: y mandatory;
-      scroll-behavior: smooth;
+      scroll-snap-type: y mandatory; scroll-behavior: smooth;
       position: relative;
     }
     section {
       color: #fff;
       height: 100vh;
       overflow: hidden;
-      display: flex; justify-content: center; align-items: center;
       scroll-snap-align: start;
     }
   </style>
@@ -29,31 +27,39 @@
     <nav>
       <a href="#section2">关于</a>
       <a href="#section3">作品</a>
-      <a href="#section1"></a>
+      <a href="#summary"></a>
       <a href="#skill">能力</a>
       <a href="#contact">联系</a>
     </nav>
 
-    <section id="section1">
-      <img src="./images/1.jpg" alt="bg">
+    <!-- 个人简介 -->
+    <section id="summary">
+      <img class="bg" src="./images/1.jpg" alt="bg">
       <div class="content">
-        <p>Hi，我是董浩</p>
-        <p>擅长前端，喜欢简约，打算走向全端的不归路 ~</p>
-        <p>想了解更多，往下滚动哦 ^_^</p>
+        <h1>Hi，我是董浩（BarryDong）</h1>
+        <div class="intro">
+          <ul>
+            <li>自学前端，2019年09月正式入行，迄今已有 4 年多前端开发经验</li>
+            <li>参与过个人独立开发、多人团队协作等多个项目，具有 H5/淘宝小程序/PC/Pad 等多端开发经验</li>
+            <li>追求代码干净、整洁、易懂，因为代码是写给人看的</li>
+            <li>有产品和用户思维，对于页面交互设计及用户体验可以提出相关建议</li>
+            <li>
+              持续自主学习，先后在知乎、掘金发布多篇博客，并于近期建立了个人笔记网站
+              <div class="bolg">
+                <a class="mySite" href="https://dongdong12138.github.io/">我的网站</a>
+                <a class="zhihu" href="https://www.zhihu.com/people/dongdong12138/activities">我的知乎</a>
+                <a class="juejin" href="https://juejin.cn/user/1855631360790110">我的掘金</a>
+              </div>
+            </li>
+          </ul>
+          <img class="picture" src="./images/avatar.jpg" alt="avatar">
+        </div>
       </div>
     </section>
 
     <!-- 关于 -->
     <section id="section2">
-      <ul>
-        <li>关于本人</li>
-        <li>自学前端，迄今已有 4 年多前端开发经验</li>
-        <li>参与过个人独立开发、多人团队协作等多个项目，具有 H5/淘宝小程序/PC/Pad 等多端开发经验</li>
-        <li>追求代码干净、整洁、易懂</li>
-        <li>有产品思维，对于页面交互及用户体验可以提出相关建议</li>
-        <li>持续自主学习新技术，建立了个人笔记及博客网站</li>
-      </ul>
-      <img src="./images/avatar.jpg" alt="avatar">
+
     </section>
 
     <!-- 作品 -->
