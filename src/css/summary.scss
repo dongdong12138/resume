@@ -57,4 +57,19 @@
   }
 
   .picture { width: 300px; }
+
+  .downArrow {
+    font-size: 1.5em;
+    margin-top: 50px;
+    position: absolute; left: 50%; top: 100%;
+    transform: translateX(-50%);
+    animation: down 1.8s linear infinite;
+    display: flex; align-items: center;
+    > span { font-size: 18px; margin-left: 10px; }
+  }
+  @keyframes down {
+    0% { transform: translate(-50%, 0%); }
+    50% { transform: translate(-50%, 100%); }
+    100% { transform: translate(-50%, 0%); }
+  }
 }
