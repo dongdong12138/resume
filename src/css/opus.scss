@@ -1,50 +1,45 @@
-#section3 {
+#opus {
   background: #6a8c69;
   flex-direction: column; align-items: flex-start;
-  padding: 100px 100px 0;
+  padding: 100px 50px 50px;
 
-  dl {
-    display: flex; flex-wrap: wrap;
-    margin: 20px 0;
-  }
+  dl { display: flex; flex-wrap: wrap; }
 
   dt {
-    font-size: 26px;
+    font-size: 20px;
     width: 100%;
+    margin-bottom: 15px;
   }
 
   dd {
     width: 300px;
-    margin-right: 20px; margin-top: 20px;
     overflow: hidden;
+    margin-right: 20px; margin-bottom: 20px;
     position: relative;
-    &:last-of-type {
-      margin-right: 0;
-    }
+    &:last-of-type { margin-right: 0; }
     &:hover {
-      img {
-        transform: scale(1.1);
-      }
-      .modal {
-        transform: translateY(0);
-      }
+      img { transform: scale(1.1); }
+      .modal { transform: translateY(0); }
     }
-    a {
-      display: block;
-    }
-    img {
-      transition: all .25s ease;
-    }
+    a { display: block; }
+    img { transition: all .25s ease; }
     .modal {
+      font-size: 16px;
       width: 100%; height: 100%;
       background: rgba(0, 0, 0, 0.7);
-      line-height: 1.8;
+      line-height: 1.5;
       display: flex; flex-direction: column; justify-content: flex-end;
       padding: 10px;
       position: absolute; left: 0; top: 0;
       transform: translateY(100%);
       transition: all .25s ease;
     }
+  }
+  @media screen and (min-width: 981px) and (max-width: 1040px) {
+    dd { width: 280px; }
+  }
+  @media screen and (max-width: 980px) {
+    dd { width: 250px; }
   }
 
   pre {
@@ -61,9 +56,10 @@
   .icon-box {
     width: 100%;
     text-align: center;
+    overflow: hidden;
     svg {
       width: 8em; height: 8em;
-      margin: 0 20px;
+      margin: -40px 20px 0;
     }
   }
 }
